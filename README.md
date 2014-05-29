@@ -21,5 +21,7 @@ FASTCGI_PROGRAM=./fastcgi.pl \
 ```
 ### starting the web app
 
-the included fastcgi.pl script runs the specified web app. an example is included, stackadmin::web;
+the included fastcgi.pl script runs the specified web app. an example is included, stackadmin::web, in which you register your app handlers within a %mod hash.
+the app handlers must inherit stackadmin::webhandler;
+two sample app handlerls are included, auth and code.
 
