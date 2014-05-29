@@ -1,7 +1,7 @@
 nginx-fastcgid.pl parses a specified nginx backend definition and spawns fastcgi servers through fastcgi.pl script.
 
-#nginx backend definition
-nginx-fastcgid.pl looks for backends who's name matches the pattern:
+###nginx backend definition
+nginx-fastcgid.pl looks into nginx config specified via env with FASTCGI_CONF for backends who's name matches the pattern:
 ```
 fastcgi-($ARGV[0]) { ... }
 ```
