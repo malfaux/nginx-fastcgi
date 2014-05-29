@@ -7,6 +7,8 @@ fastcgi-($ARGV[0]) { ... }
 ```
 where $ARGV[0] is the argument specified when running nginx-fastcgid.pl
 
+the upstreams can be either tcp or unix sockets.
+
 ### running nginx-fastcgid
 you would normally run nginx-fastcgid.pl like this:
 ```bash
@@ -17,6 +19,4 @@ FASTCGI_PROGRAM=./fastcgi.pl \
 ./nginx-fastcgid.pl <backend-name>
 
 ```
-
-FCGIUID=0 FCGIAPP=stackadmin::web FASTCGI_CONF=./nginx/00-upstreams.conf FASTCGI_PROGRAM=./fastcgi.pl ./nginx-fastcgid.pl flup
 
