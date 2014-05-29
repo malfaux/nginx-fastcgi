@@ -167,7 +167,7 @@ sub sendheaders
                 Access-Control-Allow-Credentials
                 Access-Control-Expose-Headers/
             } = (
-                $ENV{HTTP_ORIGIN} // 'http://dev.stackadmin.com',
+                $ENV{HTTP_ORIGIN} // 'http://localhost',
                 'GET,POST,PUT,DELETE,OPTIONS',
                 $ENV{HTTP_ACCESS_CONTROL_REQUEST_HEADERS} // 'accept, x-auth-key, x-requested-with',
                 $ENV{HTTP_ACCESS_CONTROL_ALLOW_CREDENTIALS} // 'true',
@@ -187,7 +187,7 @@ sub sendheaders
 sub r_needauth
 {
     sendheaders HTTP_FORBIDDEN, undef,
-        'X-Auth-Url' => '/dns/auth',
+        'X-Auth-Url' => '/auth',
         'X-Auth-Params' => 'U,SHA1(P)',
         @_;
 }

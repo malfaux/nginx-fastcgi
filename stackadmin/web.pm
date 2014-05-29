@@ -7,7 +7,6 @@ use stackadmin::dns;
 use stackadmin::code;
 my %mods = (
     'auth' => stackadmin::auth->new(),
-    'dns' => stackadmin::dns->new(),
     'code' => stackadmin::code->new(),
 );
 
