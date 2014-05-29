@@ -1,0 +1,4 @@
+#!/bin/bash
+#FCGIUID=33 FCGIAPP=stackadmin::web FASTCGI_CONF=./nginx/00-upstreams.conf FASTCGI_PROGRAM=./fastcgi.pl ./nginx-fastcgid.pl flup
+#TODO: fix UID!! (git needs write permissions)
+FCGIUID=0 FCGIAPP=stackadmin::web FASTCGI_CONF=./nginx/00-upstreams.conf FASTCGI_PROGRAM=./fastcgi.pl ./nginx-fastcgid.pl flup
