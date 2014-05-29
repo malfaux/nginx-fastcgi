@@ -3,7 +3,6 @@ package stackadmin::web;
 use Data::Dumper;
 
 use stackadmin::auth;
-use stackadmin::dns;
 use stackadmin::code;
 my %mods = (
     'auth' => stackadmin::auth->new(),

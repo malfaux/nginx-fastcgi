@@ -19,4 +19,7 @@ FASTCGI_PROGRAM=./fastcgi.pl \
 ./nginx-fastcgid.pl <backend-name>
 
 ```
+### starting the web app
+
+the included fastcgi.pl script runs the specified web app. an example is included, stackadmin::web;
 
